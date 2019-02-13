@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/* ================================
+style
+================================= */
+
+header { position:fixed; top:0; left:0; width:100%; height:72px; background-color:#fff; border-bottom:solid 1px #e5e5e5; z-index:9999999; }
+
+header #hd_logo_toshiba { float:left; margin:28px 0 0 24px; line-height:0; }
+header #hd_logo_tms { float:left; margin:29px 0 0 24px; line-height:0; }
+#en header #hd_logo_tms { margin:30px 0 0 24px; }
+header #hd_100year { float:right; margin:18px 21px 0 0; line-height:0; }
+header #hd_madeforlife { float:right; margin:22px 24px 0 0; line-height:0; }
+
+footer { position:fixed; bottom:0; left:0; width:100%; height:48px; background-color:#fff; border-top:solid 1px #e5e5e5; overflow:hidden; z-index:9999999; }
+footer ul#ft_unavis { display:inline-block; float:left; margin:13px 0 0 23px; }
+footer ul#ft_unavis li { display:inline-block; float:left; margin-right:17px; }
+footer ul#ft_unavis li a { font-size:12px; }
+footer #lang { position:absolute; top:13px; left:50%; margin-left:-42px; }
+footer #lang a,
+footer #lang p { margin:0 10px; font-size:16px; display:block; float:left; font-weight:bold; }
+footer #lang p { line-height:23.5px; }
+footer #lang a:hover { text-decoration:none; color:#ee1d26; }
+footer #lang span { display:block; margin-top:-2px; float:left; }
+footer #copyright { float:right; font-size:10px; margin:9px 23px 0 0; }
+
+
+#wrapper { width:100%; height:auto; position:relative; z-index:99; /*background:url("../img/atari.jpg") 50% 0 no-repeat;*/ }
+#container { width:100%; height:auto; }
+
+.content { clear:both; position:relative; width:100%; /*min-width:980px;*/ clear:both; }
+.inner { position:relative; width:960px; height:100%; margin:0 auto; }
+
+#mv { position:fixed; top:0; left:0; width:100%; height:100%; overflow:hidden; }
+#mv_inner {  }
+#mv ul#kvimgset {  }
+#mv ul#kvimgset li.kvimg { position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; display:none; }
+#mv ul#kvimgset li.kvimg .kvimg_inner { position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; }
+#mv ul#kvimgset li.kvimg .kvimg_inner img.kvscale { display:block; width:100%; }
+
+#mv ul#kvtxtset {  }
+#mv ul#kvtxtset li.kvbox { position:absolute; top:41.1%; right:13.4%; width:360px; height:auto; /*display:none;*/ }
+#mv ul#kvtxtset li.kvbox .kv_bttl { text-align:center; letter-spacing:7px; opacity:0; }
+#mv ul#kvtxtset li#kvbox1 img { position:absolute; top:-48px; left:51px; }
+
+#mvsp { display:none; }
+
+.alink_movie { position:absolute; top:41.1%; right:13.4%; margin:141px 54px 0 0; width:256px; height:48px; /*border:1px solid #e6e6e6;*/ background-color:#000; overflow:hidden; }
+.alink_movie a { display:block; color:#fff; text-align:center; font-size:16px; padding:13px 13px 13px 26px; background:url("../img/icon_movie.png") 46px 17px no-repeat; }
+.alink_movie a:hover { text-decoration:none; }
+.alink_movie a .alink_icon2 { display:block; width:100%; height:100%; position:absolute; top:0; left:0; opacity:0; background:url("../img/icon_movie2.png") 46px 17px no-repeat; z-index:101; }
+
+
+ul#snv_nolist { position:absolute; bottom:18.6%; left:50%; }
+ul#snv_nolist li.snv_no { position:relative; left:-50%; display:inline-block; float:left; margin-right:16px; }
+ul#snv_nolist li.snv_no:last-child { margin:0; }
+
+#scrolldown { position:absolute; bottom:10%; left:50%; width:90px; margin-left:-45px; text-align:center; }
+#scrollup { position:absolute; top:103px; left:50%; margin-left:-24px; width:90px; margin-left:-45px; text-align:center; }
+.scrollbtn a.scroll_icon {  }
+
+a#direct_r { display:block; position:absolute; top:50%; right:2.9%; margin-top:0px; }
+a#direct_l { display:block; position:absolute; top:50%; left:2.9%; margin-top:0px; }
+
+
+
+#detail { position:fixed; top:100%; left:0; width:100%; height:auto; background-color:#fff; z-index:101; }
+#detail #ddtset { padding-top:300px; width:610px; height:auto; }
+#detail #dd_bttl { font-size:64px; text-align:center; margin-bottom:75px; line-height:80px; }
+#detail .dd_txt { text-align:center; letter-spacing:1px; }
+
+#detail ul.dd_list { display:inline-block; margin-top:80px; width:100%; }
+#detail ul.dd_list li.dd_item { display:inline-block; float:left; width:209px; margin:0 40px 50px 0; }
+#detail ul.dd_list li.dd_item .thumb_img { margin-bottom:30px; }
+#detail ul.dd_list li.dd_item .thumb_ttl { margin-bottom:30px; font-size:20px; }
+#detail ul.dd_list li.dd_item .thumb_txt { font-size:14px; line-height:24px; }
+
+#detail ul.dd_list li.ddmr0 { margin-right:0; }
+#detail ul.dd_list li.ddlast { margin-right:0; width:458px; }
+
+#detail #ddend { padding-top:30px; text-align:center; margin-bottom:150px; }
+#detail #ddend #dd_e1 {  }
+#detail #ddend #dd_e1 img { width:172px; height:34px; margin-bottom:35px; line-height:1; }
+#detail #ddend #dd_e2,
+#detail #ddend #dd_e3,
+#detail #ddend #dd_e4 { margin-bottom:20px; font-size:20px; line-height:1; }
+#detail #ddend #dd_e5 { position:relative; top:inherit; right:inherit; margin:50px auto 0 auto; }
+
+@media screen and (min-width: 980px) {
+
+.alink_movie a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	height: 260%;
+}
+
+.alink_movie a::before,
+.alink_movie a::after { position: absolute; z-index:1; display:block; content:''; }
+
+.alink_movie a:after {
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.alink_movie a:hover,
+.alink_movie a:after {
+	color: #000;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.alink_movie a:hover > .alink_icon2:hover {
+	opacity:1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.alink_movie a:hover:after { height:470%; opacity:1; }
+.alink_movie a:active:after { height:400%; opacity:1; }
+.alink_movie a .alink_txt { display:block; position:relative; z-index:100; }
+
+}
+
+
+/* ================================================================================================== */
+
+@media only screen and (max-width: 980px) {
+
+.inner { width:90%; margin:0 5%; margin:0 auto; }
+
+#detail #ddtset { padding-top:280px; width:610px; height:auto; }
+
+#detail ul.dd_list { width:100%; }
+#detail ul.dd_list li.dd_item { width:21.5%; margin:0 4.6% 50px 0; }
+#detail ul.dd_list li.dd_item img { width:100%; }
+#detail ul.dd_list li.ddmr0 { margin-right:0; }
+#detail ul.dd_list li.ddlast { margin-right:0; width:43%; }
+
+#detail ul.dd_list li.ddlast .thumb_img { width:50%; }
+
+}
+
+/* ================================================================================================== */
+
+@media only screen and (max-width: 768px) {
+
+header { height:50px;  }
+header #hd_logo_toshiba { width:80px; margin:20px 0 0 5%; }
+header #hd_logo_tms { display:none; }
+header #hd_100year { width:60px; margin:13px 3% 0 0; }
+header #hd_madeforlife { width:91px; margin:18px 5% 0 0; }
+
+.inner { width:90%; margin:0 5%; margin:0 auto; }
+
+#scrollup { display:none; }
+
+#mv { display:none; }
+#mvsp { display:block; }
+#mvsp .sp_kv_bttl { position:absolute; top:42%; left:25%; width:51%; }
+#mvsp .sp_kv_bttl_t { position:absolute; top:47%; left:0%; width:100%; text-align:center; font-size:48px; line-height:58px; letter-spacing:7px; color:#fff; }
+
+#mvsp ul#sp_snv_nolist { position:absolute; bottom:8%; left:50%; width:50%; z-index:101; }
+#mvsp ul#sp_snv_nolist li.sp_snv_no { position:relative; left:-50%; display:inline-block; float:left; margin-right:8%; width:14%; }
+#mvsp ul#sp_snv_nolist li.sp_snv_no:last-child { margin:0; }
+#mvsp ul#sp_snv_nolist li.sp_snv_no a { display:block; width:100%; }
+
+.alink_movie a { display:block; color:#fff; text-align:center; font-size:14px; padding:13px 13px 13px 26px; background:url("../img/icon_movie_sp.png") 45px 18px no-repeat; background-size:20px; line-height:22px; }
+
+#detail { position:relative!important; top:inherit; left:inherit; }
+
+#detail #sp_scrolldown { width:13%; position:absolute; top:-1%; left:42.9%; z-index:102; }
+#detail span.sp_scroll_txt { display:block; position:absolute; top:-2.1%; left:-1%; text-align:center; margin:0 auto; width:100%; font-size:20px; }
+
+
+#detail #ddtset { width:90%; margin:0 5%; padding-top:80px; }
+#detail #dd_bttl { font-size:54px; text-align:center; margin-bottom:75px; line-height:80px; }
+
+#detail ul.dd_list { width:100%; margin-top:8%; }
+#detail ul.dd_list li.dd_item { width:47.7%; margin:0 4.6% 6% 0; }
+#detail ul.dd_list li.dd_item:nth-child(even) { margin:0 0 3% 0; }
+#detail ul.dd_list li.dd_item img { width:100%; }
+
+#detail ul.dd_list li.dd_item .thumb_ttl { margin-bottom:3%; }
+#detail ul.dd_list li.dd_item .thumb_img { margin-bottom:4%; }
+#detail ul.dd_list li.ddmr0 { margin-right:0; }
+#detail ul.dd_list li.ddlast { margin-right:0; width:95.4%; }
+#detail ul.dd_list li.ddlast .thumb_img { width:50%; }
+
+#detail #ddend { margin-bottom:80px; }
+#detail #ddend #dd_e1 { margin-bottom:40px; }
+#detail #ddend #dd_e1 img { display:block; margin:0 auto; }
+
+
+.sp_alink_movie { position:absolute; top:70%; left:20%; width:60%; height:48px; background-color:#000; z-index:101; }
+.sp_alink_movie a { display:block; color:#fff; text-align:center; font-size:16px; padding:13px 13px 13px 26px; background:url("../img/icon_movie_sp.png") 21px 18px no-repeat; background-size:20px; line-height:22px; }
+.sp_alink_movie a:hover { text-decoration:none; }
+
+footer { position:relative; bottom:inherit; left:inherit; width:100%; height:130px; z-index:999998; }
+footer ul#ft_unavis { display:inline-block; float:none; margin:10px 0 0; position:relative; left:50%; }
+footer ul#ft_unavis li { position:relative; display:inline-block; float:left; margin-right:17px; left:-50%; }
+footer ul#ft_unavis li:last-child { margin-right:0; }
+footer ul#ft_unavis li a { font-size:12px; }
+footer #sp_tms { width:250px; margin:0 auto; }
+footer #lang { clear:both; position:relative; top:inherit; left:50%; margin-left:0; display:table; margin-bottom:10px; }
+footer #lang a { margin:0 10px; font-size:16px; display:block; float:left; font-weight:bold; }
+footer #lang span { margin-top:0; }
+footer #lang span,
+footer #lang p,
+footer #lang a { position:relative; left:-50%; }
+footer #copyright { clear:both; float:none; width:100%; text-align:center; margin-bottom:10px; }
+
+}
+
+/* ================================================================================================== */
+
+@media only screen and (max-width: 480px) {
+
+
+#mvsp .sp_kv_bttl_t { font-size:24px; line-height:34px; letter-spacing:6px; }
+
+.alink_movie a { font-size:13px; }
+.sp_alink_movie { height:42px; }
+.sp_alink_movie a { font-size:13px; padding:11px 13px 13px 26px; background:url("../img/icon_movie_sp.png") 21px 15px no-repeat; background-size:20px; line-height:20px; }
+
+#detail span.sp_scroll_txt { font-size:13px; }
+
+#detail #dd_bttl { font-size:34px; margin-bottom:10%; line-height:45px; letter-spacing:3px; }
+#detail #ddtset { width:90%; margin:0 5%; padding-top:70px; }
+
+#detail ul.dd_list li.dd_item { width:47.7%; margin:0 4.6% 8% 0; }
+#detail ul.dd_list li.dd_item:nth-child(even) { margin:0 0 8% 0; }
+
+#detail ul.dd_list li.dd_item .thumb_ttl { margin-bottom:7%; }
+#detail ul.dd_list li.dd_item .thumb_img { margin-bottom:9%; }
+#detail ul.dd_list li.dd_item .thumb_ttl { font-size:17px; }
+#detail ul.dd_list li.dd_item .thumb_txt { font-size:10px; line-height:16px; }
+
+#detail ul.dd_list li.ddlast { margin-right:0; width:95.4%; }
+#detail ul.dd_list li.ddlast .thumb_img { width:50%; }
+
+#detail #ddend { margin-bottom:60px; }
+
+footer ul#ft_unavis li a { font-size:10px; }
+footer #copyright { font-size:9px; }
+
+}
+
+
+h1, h2, h3, p {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s; 
+}
+
